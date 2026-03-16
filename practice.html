@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<title>hello</title>
+</head>
+<form>
+
+<label>username</label></br>
+<input name="username" type="text" placeholder="entername"/></br>
+<label>password</label></br>
+<input name="pass"  id="pass" type="password" placeholder="password"/></br>
+<label>confirm passwrd</label></br>
+<input name="cpass" oninput="checkpass();" id="cpass" type="password" placeholder="confirm password"/></br>
+<span id="error"></span><br/>
+
+
+
+
+</form>
+<script>
+function checkpass(){
+var pass=document.getElementById("pass").value;
+var cpass=document.getElementById("cpass").value;
+
+if(pass==cpass){
+document.getElementById("error").innerText="password match";
+document.getElementById("error").style.color="green";
+
+}
+
+else{
+document.getElementById("error").innerText="password does not match";
+document.getElementById("error").style.color="red";
+</script>
+<body>
+
+</body>
+<html>
